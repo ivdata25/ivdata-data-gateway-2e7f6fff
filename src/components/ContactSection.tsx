@@ -14,7 +14,7 @@ const ContactSection = () => {
     
     toast({
       title: "Message received",
-      description: "Thanks for reaching out. We'll get back to you shortly.",
+      description: "Thanks for reaching out. We'll get back to you within 24 hours.",
     });
   };
   
@@ -23,9 +23,9 @@ const ContactSection = () => {
       <div className="container mx-auto container-padding">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="mb-4">Ready to <span className="gradient-text">Transform</span> Your Data?</h2>
+            <h2 className="mb-4">Ready to Build Your <span className="gradient-text">Data Infrastructure?</span></h2>
             <p className="text-lg text-gray-600 mb-8">
-              Get in touch with our team to discuss how our data engineering services can help your business unlock the full potential of your data.
+              Book a free 30-minute consultation to discuss your startup's data challenges and how we can help you build scalable solutions.
             </p>
             
             <div className="space-y-6">
@@ -35,7 +35,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium">Email Us</h4>
-                  <p className="text-gray-600">contact@ivdata.com</p>
+                  <p className="text-gray-600">hello@ivdatasolutions.com</p>
                 </div>
               </div>
               
@@ -45,7 +45,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium">Call Us</h4>
-                  <p className="text-gray-600">(123) 456-7890</p>
+                  <p className="text-gray-600">(555) 123-4567</p>
                 </div>
               </div>
               
@@ -54,8 +54,8 @@ const ContactSection = () => {
                   <MessageSquare className="h-6 w-6 text-ivdata-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium">Schedule a Consultation</h4>
-                  <p className="text-gray-600">Book a free 30-minute consultation with our experts</p>
+                  <h4 className="font-medium">Book a Consultation</h4>
+                  <p className="text-gray-600">Free 30-minute video call with a senior data engineer</p>
                 </div>
               </div>
             </div>
@@ -71,23 +71,26 @@ const ContactSection = () => {
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-sm font-medium">Email</label>
-                  <Input id="email" type="email" placeholder="Your email" required />
+                  <Input id="email" type="email" placeholder="your@email.com" required />
                 </div>
               </div>
               
               <div className="space-y-2">
                 <label htmlFor="company" className="text-sm font-medium">Company</label>
-                <Input id="company" placeholder="Your company" />
+                <Input id="company" placeholder="Your startup" />
               </div>
               
               <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium">Message</label>
-                <Textarea id="message" placeholder="How can we help you?" rows={4} required />
+                <label htmlFor="message" className="text-sm font-medium">Tell us about your data challenges</label>
+                <Textarea id="message" placeholder="What are your goals? What problems are you facing?" rows={4} required />
               </div>
               
               <Button type="submit" className="w-full btn-primary">
-                Send Message
+                Book Free Consultation
               </Button>
+              <p className="text-xs text-gray-500 text-center mt-2">
+                No obligation, no sales pressure
+              </p>
             </form>
           </div>
         </div>

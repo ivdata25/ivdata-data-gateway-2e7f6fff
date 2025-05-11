@@ -10,27 +10,27 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in">
             <h1 className="font-bold tracking-tight">
-              <span className="block">Unlock the Power of</span>
-              <span className="gradient-text">Your Data</span>
+              <span className="block">Data Infrastructure</span>
+              <span className="gradient-text">Built for Startups</span>
             </h1>
             <p className="text-lg sm:text-xl text-gray-600 max-w-lg">
-              Modern data engineering solutions that transform raw data into 
-              valuable insights, empowering your business decisions.
+              We build scalable, cost-efficient data systems that grow with your business. 
+              Expert data engineering without the overhead of a full-time team.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="btn-primary">Schedule a Consultation</Button>
+              <Button className="btn-primary">Book a Free Consultation</Button>
               <Button variant="outline" className="border-ivdata-primary text-ivdata-primary hover:bg-ivdata-primary/10">
-                Learn More
+                Our Services
               </Button>
             </div>
             
             <div className="pt-4">
-              <p className="text-sm text-gray-500 mb-2">Trusted by industry leaders:</p>
+              <p className="text-sm text-gray-500 mb-2">Trusted by innovative startups:</p>
               <div className="flex flex-wrap gap-6">
-                <div className="text-gray-400 font-semibold">ACME Corp</div>
-                <div className="text-gray-400 font-semibold">TechGiant</div>
-                <div className="text-gray-400 font-semibold">DataFlow</div>
-                <div className="text-gray-400 font-semibold">InnovateCo</div>
+                <div className="text-gray-400 font-semibold">FinTech Co</div>
+                <div className="text-gray-400 font-semibold">HealthAI</div>
+                <div className="text-gray-400 font-semibold">EcoMetrics</div>
+                <div className="text-gray-400 font-semibold">RetailFlow</div>
               </div>
             </div>
           </div>
@@ -40,22 +40,22 @@ const HeroSection = () => {
             <div className="relative z-10 grid grid-cols-2 gap-6">
               <div className="bg-white p-6 rounded-xl shadow-lg card-hover">
                 <Database className="h-8 w-8 text-ivdata-primary mb-4" />
-                <h3 className="text-lg font-semibold mb-2">Data Pipelines</h3>
-                <p className="text-gray-600">Automated flows that ensure data reliability</p>
+                <h3 className="text-lg font-semibold mb-2">Cloud-Native</h3>
+                <p className="text-gray-600">AWS & GCP optimized architectures</p>
               </div>
               <div className="bg-white p-6 rounded-xl shadow-lg card-hover mt-10">
                 <Server className="h-8 w-8 text-ivdata-secondary mb-4" />
-                <h3 className="text-lg font-semibold mb-2">Cloud Infrastructure</h3>
-                <p className="text-gray-600">Scalable solutions for modern businesses</p>
+                <h3 className="text-lg font-semibold mb-2">Cost-Efficient</h3>
+                <p className="text-gray-600">Reduce cloud spending by 30-50%</p>
               </div>
               <div className="bg-white p-6 rounded-xl shadow-lg card-hover">
                 <Code className="h-8 w-8 text-ivdata-accent mb-4" />
-                <h3 className="text-lg font-semibold mb-2">Data Integration</h3>
-                <p className="text-gray-600">Connect your systems seamlessly</p>
+                <h3 className="text-lg font-semibold mb-2">Scalable Pipelines</h3>
+                <p className="text-gray-600">Built for future growth</p>
               </div>
               <div className="bg-gradient-to-br from-ivdata-primary to-ivdata-secondary p-6 rounded-xl shadow-lg card-hover mt-10">
-                <h3 className="text-lg font-semibold mb-2 text-white">Ready to transform your data?</h3>
-                <p className="text-white/80">Get started with ivdata today</p>
+                <h3 className="text-lg font-semibold mb-2 text-white">Ready to unlock your data?</h3>
+                <p className="text-white/80">Book your free consultation</p>
               </div>
             </div>
           </div>

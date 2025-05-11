@@ -4,28 +4,28 @@ import { CheckCircle } from 'lucide-react';
 
 const features = [
   {
-    title: "Deep Technical Expertise",
-    description: "Our team consists of seasoned data engineers with extensive experience across industries."
+    title: "Senior Expertise",
+    description: "Work directly with experienced engineers, not account managers or junior staff."
   },
   {
-    title: "End-to-End Solutions",
-    description: "From data strategy to implementation and maintenance, we provide comprehensive services."
+    title: "Startup-Focused",
+    description: "Solutions designed for growth-stage companies with cost-efficiency in mind."
   },
   {
-    title: "Cloud-First Approach",
-    description: "We leverage the latest cloud technologies to build scalable, cost-effective solutions."
+    title: "Cloud-Native Approach",
+    description: "Modern architectures that leverage the best of AWS and GCP capabilities."
   },
   {
-    title: "Agile Methodology",
-    description: "Our iterative approach ensures rapid delivery and adaption to changing requirements."
+    title: "No Lock-In",
+    description: "Clean, documented code that your future team can easily maintain."
   },
   {
-    title: "Focus on Business Value",
-    description: "We align data solutions with your business objectives to maximize ROI."
+    title: "Practical Solutions",
+    description: "We focus on business value, not overengineered systems that look impressive."
   },
   {
-    title: "Ongoing Support",
-    description: "We're committed to your long-term success with dedicated maintenance and support."
+    title: "Knowledge Transfer",
+    description: "We'll train your team to understand and operate the systems we build."
   }
 ];
 
@@ -35,9 +35,9 @@ const WhyChooseUsSection = () => {
       <div className="container mx-auto container-padding">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="mb-6">Why Choose <span className="gradient-text">ivdata</span> for Your Data Engineering Needs</h2>
+            <h2 className="mb-6">Why Choose <span className="gradient-text">IV Data Solutions</span></h2>
             <p className="text-lg text-gray-600 mb-8">
-              We combine technical excellence with a deep understanding of business needs to deliver data solutions that drive real results.
+              We combine technical excellence with a deep understanding of startup challenges to deliver data systems that grow with your business.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
@@ -57,16 +57,16 @@ const WhyChooseUsSection = () => {
             <div className="absolute -right-20 bottom-20 w-64 h-64 bg-ivdata-secondary/20 rounded-full filter blur-3xl"></div>
             <div className="bg-white rounded-2xl shadow-xl p-8 relative z-10 border border-gray-100">
               <div className="space-y-4">
-                <div className="text-4xl font-bold text-ivdata-primary">98%</div>
-                <p className="text-gray-600">Client satisfaction rate based on post-project surveys</p>
+                <div className="text-4xl font-bold text-ivdata-primary">60%</div>
+                <p className="text-gray-600">Faster time-to-insight compared to building in-house</p>
                 <div className="border-t border-gray-200 my-4"></div>
                 
-                <div className="text-4xl font-bold text-ivdata-secondary">10x</div>
-                <p className="text-gray-600">Average improvement in data processing efficiency</p>
+                <div className="text-4xl font-bold text-ivdata-secondary">40%</div>
+                <p className="text-gray-600">Average reduction in cloud infrastructure costs</p>
                 <div className="border-t border-gray-200 my-4"></div>
                 
-                <div className="text-4xl font-bold text-ivdata-accent">50+</div>
-                <p className="text-gray-600">Successful data engineering projects delivered</p>
+                <div className="text-4xl font-bold text-ivdata-accent">100%</div>
+                <p className="text-gray-600">Startup-friendly pricing with flexible engagement models</p>
               </div>
             </div>
           </div>

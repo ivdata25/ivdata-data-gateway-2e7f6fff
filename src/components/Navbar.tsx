@@ -12,21 +12,22 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0">
             <a href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-ivdata-primary">iv</span>
-              <span className="text-2xl font-bold text-ivdata-secondary">data</span>
+              <span className="text-2xl font-bold text-ivdata-primary">IV</span>
+              <span className="text-2xl font-bold text-ivdata-secondary">Data</span>
+              <span className="text-lg font-medium text-gray-600 ml-1">Solutions</span>
             </a>
           </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
+            <a href="#about" className="text-gray-600 hover:text-ivdata-primary transition-colors">About</a>
             <a href="#services" className="text-gray-600 hover:text-ivdata-primary transition-colors">Services</a>
-            <a href="#why-us" className="text-gray-600 hover:text-ivdata-primary transition-colors">Why Choose Us</a>
-            <a href="#case-studies" className="text-gray-600 hover:text-ivdata-primary transition-colors">Case Studies</a>
+            <a href="#why-us" className="text-gray-600 hover:text-ivdata-primary transition-colors">Why Us</a>
             <a href="#contact" className="text-gray-600 hover:text-ivdata-primary transition-colors">Contact</a>
           </div>
           
           <div className="hidden md:flex">
-            <Button className="bg-ivdata-primary hover:bg-ivdata-primary/90 text-white">Get Started</Button>
+            <Button className="bg-ivdata-primary hover:bg-ivdata-primary/90 text-white">Book Consultation</Button>
           </div>
           
           {/* Mobile Navigation Button */}
@@ -44,6 +45,13 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-4 animate-fade-in">
             <a 
+              href="#about" 
+              className="block text-gray-600 hover:text-ivdata-primary py-2 transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              About
+            </a>
+            <a 
               href="#services" 
               className="block text-gray-600 hover:text-ivdata-primary py-2 transition-colors"
               onClick={() => setIsOpen(false)}
@@ -55,14 +63,7 @@ const Navbar = () => {
               className="block text-gray-600 hover:text-ivdata-primary py-2 transition-colors"
               onClick={() => setIsOpen(false)}
             >
-              Why Choose Us
-            </a>
-            <a 
-              href="#case-studies" 
-              className="block text-gray-600 hover:text-ivdata-primary py-2 transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Case Studies
+              Why Us
             </a>
             <a 
               href="#contact" 
@@ -75,7 +76,7 @@ const Navbar = () => {
               className="w-full bg-ivdata-primary hover:bg-ivdata-primary/90 text-white"
               onClick={() => setIsOpen(false)}
             >
-              Get Started
+              Book Consultation
             </Button>
           </div>
         )}
