@@ -5,7 +5,7 @@ import {
   Server, 
   Code,
   Settings,
-  Chart_Line: ChartLine,
+  Chart_Line as ChartLine,
   Calendar 
 } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
