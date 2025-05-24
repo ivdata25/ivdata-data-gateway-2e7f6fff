@@ -2,12 +2,12 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
+import AboutSection from '../components/AboutSection';
 import ServicesSection from '../components/ServicesSection';
-import AboutUsSection from '../components/AboutUsSection';
 import TechnologiesSection from '../components/TechnologiesSection';
-import WhyChooseUsSection from '../components/WhyChooseUsSection';
 import CaseStudiesSection from '../components/CaseStudiesSection';
 import TestimonialsSection from '../components/TestimonialsSection';
+import CallToActionSection from '../components/CallToActionSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 
@@ -17,12 +17,12 @@ const Index = () => {
       <Navbar />
       <main>
         <HeroSection />
-        <AboutUsSection />
+        <AboutSection />
         <ServicesSection />
         <TechnologiesSection />
-        <WhyChooseUsSection />
         <CaseStudiesSection />
         <TestimonialsSection />
+        <CallToActionSection />
         <ContactSection />
       </main>
       <Footer />

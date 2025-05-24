@@ -1,59 +1,89 @@
 
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
-
-const testimonials = [
-  {
-    quote: "IV Data Solutions helped us rebuild our entire data stack in just 6 weeks. Our analytics are now 10x faster and we've cut our AWS bill by 40%.",
-    author: "Sarah L.",
-    role: "CTO, FinTech Startup"
-  },
-  {
-    quote: "Working with IV Data Solutions was refreshingly straightforward. No jargon, no overselling - just practical solutions that actually work for our scale.",
-    author: "Michael R.",
-    role: "CEO, Health Analytics Startup"
-  },
-  {
-    quote: "They built us a data pipeline that hasn't failed once in 8 months. That reliability has been transformative for our business operations.",
-    author: "Jamie T.",
-    role: "Head of Product, E-commerce Platform"
-  }
-];
+import { Star } from 'lucide-react';
 
 const TestimonialsSection = () => {
   return (
-    <section className="section-padding bg-gradient-to-b from-gray-50 to-white">
-      <div className="container mx-auto container-padding">
+    <section id="testimonials" className="py-20 bg-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="mb-4">What Our <span className="gradient-text">Clients Say</span></h2>
-          <p className="text-lg text-gray-600">
-            Don't just take our word for it - hear from startups we've helped
+          <h2 className="text-4xl font-bold text-slate-900 mb-6">
+            What Our <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Clients Say</span>
+          </h2>
+          <p className="text-xl text-slate-600">
+            Trusted by innovative startups to build their data infrastructure foundation.
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="card-hover border-gray-200 bg-white">
-              <CardContent className="pt-6">
-                <div className="mb-4 flex">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-                
-                <blockquote className="text-gray-600 italic mb-6">
-                  "{testimonial.quote}"
-                </blockquote>
-                
-                <div>
-                  <p className="font-semibold">{testimonial.author}</p>
-                  <p className="text-sm text-gray-500">{testimonial.role}</p>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <Card className="border-slate-200 bg-white hover:shadow-lg transition-all duration-300">
+            <CardContent className="p-6">
+              <div className="flex mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <blockquote className="text-slate-600 mb-4">
+                "IV Data Solutions transformed our data chaos into a streamlined, cost-effective system. 
+                Their expertise saved us months of trial and error."
+              </blockquote>
+              <div className="border-t border-slate-200 pt-4">
+                <p className="font-semibold text-slate-900">Sarah Chen</p>
+                <p className="text-sm text-slate-500">CTO, TechFlow</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="border-slate-200 bg-white hover:shadow-lg transition-all duration-300">
+            <CardContent className="p-6">
+              <div className="flex mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <blockquote className="text-slate-600 mb-4">
+                "The team's deep AWS expertise helped us scale from startup to enterprise-level data processing 
+                without the typical growing pains."
+              </blockquote>
+              <div className="border-t border-slate-200 pt-4">
+                <p className="font-semibold text-slate-900">Michael Rodriguez</p>
+                <p className="text-sm text-slate-500">Founder, DataDriven</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="border-slate-200 bg-white hover:shadow-lg transition-all duration-300">
+            <CardContent className="p-6">
+              <div className="flex mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <blockquote className="text-slate-600 mb-4">
+                "Professional, transparent, and incredibly knowledgeable. They delivered exactly what they promised, 
+                on time and under budget."
+              </blockquote>
+              <div className="border-t border-slate-200 pt-4">
+                <p className="font-semibold text-slate-900">Emily Watson</p>
+                <p className="text-sm text-slate-500">VP Engineering, ScaleUp</p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="text-center mt-12">
+          <div className="bg-slate-50 rounded-xl p-8 max-w-2xl mx-auto">
+            <h3 className="text-xl font-semibold text-slate-900 mb-4">Ready to Join Our Success Stories?</h3>
+            <p className="text-slate-600 mb-6">
+              See how we can help your startup build scalable, cost-efficient data infrastructure.
+            </p>
+            <div className="flex flex-wrap justify-center gap-8 text-slate-400 text-sm">
+              <span>• 100% Client Satisfaction</span>
+              <span>• On-Time Delivery</span>
+              <span>• Transparent Pricing</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
